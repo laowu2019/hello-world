@@ -1,0 +1,4 @@
+5月9日：按照Swizl的方法，仅部分成功，if...elif...else 不正常，"None，True，False，finally，async，await 需要添加一下"，如何添加？
+
+5月11日：大获成功：
+步骤：(1). 下载Python 3.7.3源代码。(2). 用群里的文件Grammar和ast.c分别覆盖Grammar和Python目录下的相应文件。(3). 在linux下cd到源代码目录。(4). 执行 ./configure (5). 执行 make Parser/pgen (6). 执行 ./Parser/pgen ./Grammar/Grammar ./Include/graminit.h ./Python/graminit.c (7).执行 make (8). 执行 make test (9). 执行 sudo make install (10). 运行 Python3.7
